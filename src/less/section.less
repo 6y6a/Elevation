@@ -50,10 +50,32 @@
 
   > .content {
     position: absolute;
-    top: 0;
-
+    top: @circle-border;
     border-radius: 50%;
+    color: #fff;
     font-size: 14px;
+    line-height: 1;
+
+    [class^='icon'] {
+      margin: 30px 0 22px;
+    }
+
+    h2 {
+      margin: 0;
+      font: 12px/1 sans-serif;
+      text-transform: uppercase;
+
+      em {
+        display: block;
+        margin-top: 13px;
+        font: normal 18px/1 sans-serif;
+      }
+    }
+
+    p {
+      margin: 22px 50px;
+      font: 12px/1.5 sans-serif;
+    }
   }
 }
 
