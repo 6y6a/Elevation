@@ -4,20 +4,28 @@
   text-align: center;
 }
 
+.feature-wrapper {
+  display: inline-block;
+  width: 340px;
+  padding: 10px 0;
+  text-align: center;
+  background: url('../img/circle-wrap.png') center bottom no-repeat;
+  background-size: contain;
+}
+
 .feature {
   display: inline-block;
   width: 320px;
 
-  &:not(:last-of-type) {
-    margin-right: 19px;
+  > .circle {
+    width: 100%;
+    padding-top: ~'calc(100% - @{circle-border} * 2)';
+    border: @circle-border solid fade(#fff, 90%);
+    border-radius: 50%;
+  }
+
+  > .content {
+
   }
 }
 
-.circle {
-  width: 100%;
-  padding-top: ~'calc(100% - @{circle-border} * 2)';
-  border: @circle-border solid fade(#fff, 90%);
-  border-radius: 50%;
-
-
-}
