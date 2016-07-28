@@ -99,3 +99,37 @@
   }
 }
 
+.contact {
+  background-color: fade(#fff, 90%);
+  text-align: center;
+}
+
+.brand-text {
+  margin: 20px auto 10px;
+  width: 600px;
+}
+
+.adress {
+  text-transform: uppercase;
+}
+
+.contact-data {
+  &:extend(.adress);
+  font-size: 0;
+  line-height: 0;
+
+  .tel,
+  .link,
+  .e-mail {
+    position: relative;
+    display: inline-block;
+    padding: 0 12px;
+    font: 12px/1 sans-serif;
+
+    &:not(:last-child):after {
+      position: absolute;
+      right: -1px;
+      content: '|';
+    }
+  }
+}
