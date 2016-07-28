@@ -14,18 +14,46 @@
 }
 
 .feature {
+  position: relative;
   display: inline-block;
   width: 320px;
 
-  > .circle {
+  > .circle-border {
     width: 100%;
-    padding-top: ~'calc(100% - @{circle-border} * 2)';
-    border: @circle-border solid fade(#fff, 90%);
+    padding-top: 100%;
+    background-color: fade(#fff, 90%);
     border-radius: 50%;
+  }
+  
+  > .circle {
+    position: absolute;
+    top: @circle-border;
+    left: @circle-border;
+    right: @circle-border;
+    bottom: @circle-border;
+    padding-top: ~'calc(100% - @{circle-border} * 2)';
+    background-color: grey;
+    border-radius: 50%;
+  }
+  
+  > .circle-light {
+    background-color: @brand-color-light;
+  }
+  
+  > .circle-medium {
+    background-color: @brand-color-medium;
+  }
+  
+  > .circle-rich {
+    background-color: @brand-color-rich;
   }
 
   > .content {
+    position: absolute;
+    top: 0;
 
+    border-radius: 50%;
+    font-size: 14px;
   }
 }
 
