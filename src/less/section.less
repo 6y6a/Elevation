@@ -1,0 +1,23 @@
+.ability > .container {
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+}
+
+.feature {
+  display: inline-block;
+  width: 320px;
+
+  &:not(:last-of-type) {
+    margin-right: 19px;
+  }
+}
+
+.circle {
+  width: 100%;
+  padding-top: ~'calc(100% - @{circle-border} * 2)';
+  border: @circle-border solid fade(#fff, 90%);
+  border-radius: 50%;
+
+
+}
