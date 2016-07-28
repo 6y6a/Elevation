@@ -82,19 +82,20 @@
 
     h2 {
       margin: 0;
-      font: 12px/1 sans-serif;
+      font: 100 24px/1 "Novecento", sans-serif;
       text-transform: uppercase;
+      letter-spacing: 3px;
 
       em {
         display: block;
-        margin-top: 13px;
-        font: normal 18px/1 sans-serif;
+        margin-top: 10px;
+        font: bold 34px/1 "Novecento", sans-serif;
       }
     }
 
     p {
       margin: 22px 50px;
-      font: 12px/1.5 sans-serif;
+      font: 14px/1.5 "Helvetica", sans-serif;
     }
   }
 }
@@ -112,25 +113,36 @@
 
 .adress {
   text-transform: uppercase;
+  font: 24px/1 "Novecento", sans-serif;
+
+  p {
+    margin: 11px 0 0;
+  }
 }
 
 .contact-data {
-  &:extend(.adress);
+  &:extend(.adress all);
   font-size: 0;
   line-height: 0;
 
   .tel,
   .link,
   .e-mail {
-    position: relative;
     display: inline-block;
     padding: 0 12px;
-    font: 12px/1 sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+  }
 
-    &:not(:last-child):after {
-      position: absolute;
-      right: -1px;
-      content: '|';
-    }
+  a {
+    color: @brand-color-rich;
+  }
+}
+
+.social-icon {
+  margin: 20px 0 30px;
+
+  [class^="icon"]:not(:last-child) {
+    margin-right: 30px;
   }
 }
