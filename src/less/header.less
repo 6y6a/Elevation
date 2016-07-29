@@ -1,10 +1,21 @@
 body {
   background: #838484;
-  background: url("../img/bg.jpg") center bottom no-repeat;
+  background: url("../img/bg-desctop.jpg") center bottom no-repeat;
   background-size: cover;
 }
 
 .brand {
   padding-top: 57.5px;
   padding-bottom: 655px;
+}
+
+// Tablet screen
+@media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+  body {
+    background: url('../img/bg-tablet.jpg') center bottom no-repeat;
+  }
+
+  .brand {
+    padding-bottom: 200px;
+  }
 }

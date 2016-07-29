@@ -182,3 +182,23 @@
     }
   }
 }
+
+// Tablet screen
+@media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+  .white-bg {
+    display: none;
+  }
+
+  .square {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 50%;
+    background: none;
+  }
+
+  .feature > .content {
+    top: 50%;
+    transform: translate(0, -75%);
+  }
+}
