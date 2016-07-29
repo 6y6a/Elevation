@@ -8,8 +8,9 @@
 .white-bg {
   float: left;
   width: 12.19421793921423%;
-  height: 340px;
-  background: url('../img/blank.png') top left repeat-x;
+  padding-top: 25.20385470719051%;
+  background: url('../img/blank.png') bottom left repeat-x;
+  background-size: contain;
 }
 
 .square {
@@ -71,6 +72,9 @@
   > .content {
     position: absolute;
     top: @circle-border;
+    left: 0;
+    right: 0;
+    bottom: 0;
     border-radius: 50%;
     color: #fff;
     font-size: 14px;
@@ -144,5 +148,12 @@
 
   [class^="icon"]:not(:last-child) {
     margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .feature > .content {
+    top: 50%;
+    transform: translate(0, -50%);
   }
 }
