@@ -113,7 +113,7 @@
 
 .brand-text {
   margin: 20px auto 10px;
-  width: 600px;
+  width: 44.51038575667656%;
 }
 
 .adress {
@@ -200,5 +200,79 @@
   .feature > .content {
     top: 50%;
     transform: translate(0, -75%);
+  }
+
+  .brand-text {
+    width: 75%;
+  }
+}
+
+// Small screen
+@media screen and (min-width: @screen-xs-min) and (max-width: @screen-xs-max) {
+  .white-bg {
+    display: none;
+  }
+
+  .square {
+    width: 65%;
+    margin-left: 17.5%;
+    margin-right: 17.5%;
+    padding-top: 65%;
+    background: none;
+  }
+
+  .feature > .content {
+    top: 50%;
+    transform: translate(0, -75%);
+
+    [class^='icon'] {
+      margin: 8px 0 16px;
+    }
+  }
+
+  .brand-text {
+    width: 90%;
+  }
+}
+
+// Phone screen
+@media screen and (min-width: 0) and (max-width: 479px) {
+  .white-bg {
+    display: none;
+  }
+
+  .square {
+    width: 100%;
+    padding-top: 100%;
+    background: none;
+  }
+
+  .feature > .content {
+    top: 50%;
+    transform: translate(0, -85%);
+
+    [class^='icon'] {
+      margin: 12px 0 16px;
+    }
+  }
+
+  .brand-text {
+    width: 100%;
+  }
+
+  .adress { font-size: 16px; }
+
+  .contact-data {
+    .tel,
+    .link,
+    .e-mail {
+      font-size: 16px;
+    }
+  }
+
+  .social-icon {
+    [class^="icon"] {
+      margin-right: 0 !important;
+    }
   }
 }

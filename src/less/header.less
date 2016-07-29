@@ -19,3 +19,25 @@ body {
     padding-bottom: 200px;
   }
 }
+
+// Small screen
+@media screen and (min-width: @screen-xs-min) and (max-width: @screen-xs-max) {
+  body {
+    background: url('../img/bg-small.jpg') center bottom no-repeat;
+  }
+
+  .brand {
+    padding-bottom: 100px;
+  }
+}
+
+// Phone screen
+@media screen and (min-width: 0) and (max-width: 479px) {
+  body {
+    background: url('../img/bg-phone.jpg') center bottom no-repeat;
+  }
+
+  .brand {
+    padding-bottom: 100px;
+  }
+}
