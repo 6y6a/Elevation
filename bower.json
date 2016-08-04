@@ -16,15 +16,17 @@
   ],
   "dependencies": {
     "jquery": "1.12.3",
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "animate.css": "^3.5.2",
+    "wow": "wow.js#^1.1.2"
   },
-  "overrides" : {
-    "bootstrap" : {
+  "overrides": {
+    "bootstrap": {
       "main": [
         "less/bootstrap.less"
       ]
     },
-    "jquery" : {
+    "jquery": {
       "main": []
     }
   }
