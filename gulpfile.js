@@ -73,7 +73,7 @@ gulp.task('build', ['clean', 'make:less', 'make:js'], function(){
         }))
         .pipe(gulp.dest('dist/img'));
 
-    var buildJS = gulp.src('src/js/**/*.js')
+    var buildJS = gulp.src(['src/js/wow.js', 'src/js/main.js'])
         .pipe(concat('modules.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
